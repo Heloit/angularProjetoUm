@@ -1,0 +1,21 @@
+
+<h1>Heloisa Vital de Melo</h1>
+
+<br>
+<br>
+
+ <h2>Sintaxe Tradicional</h2>
+ <p *ngIf="status === 'sucesso'; else erroTemplate">Operação bem-sucedida!</p>
+ <ng-template #erroTemplate>
+   <p>Ocorreu um erro!</p>
+ </ng-template>
+
+ <br>
+ <br>
+
+ <h2>Nova Sintaxe</h2>
+@if (status === 'sucesso') {
+   <p>Operação bem-sucedida!</p>
+ } @else {
+   <p>Ocorreu um erro! ❌</p>
+ }
